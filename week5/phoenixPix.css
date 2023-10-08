@@ -1,0 +1,28 @@
+img{
+    height: 400px;
+    width: 500px;
+    border: 5px solid black;
+
+}
+
+iframe{
+    height: 400px;
+    width: 500px;
+    border: 5px solid black;
+}
+
+.image1{
+    filter: opacity(50%);
+}
+
+.image3{
+    filter: blur(2px);
+}
+
+.image2{
+    filter: sepia(80%);
+}
+
+.image4{
+    filter: grayscale(70%);
+}
