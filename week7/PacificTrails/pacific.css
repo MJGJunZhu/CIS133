@@ -20,7 +20,23 @@ nav {
 	padding-bottom: .5em;
 	text-align: center;
 }
-
+nav li {
+    display: inline-block;
+    padding-right: .5em;
+    padding-left: .5em;
+    list-style-type: none;
+}
+a:link {
+    text-decoration: none; 
+    color: #002171;
+}
+a:visited {
+    color: #002171;
+}
+a:hover {
+    background-color: #002171;
+    color: #FFFFFF;
+}
 main { 
     padding-left: 2em;
     padding-right: 2em;
