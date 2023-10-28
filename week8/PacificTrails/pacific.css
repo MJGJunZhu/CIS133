@@ -113,11 +113,12 @@ h3 {
         width: 14.4em;
     }
     h1 {
-        font-size: 2em;
-        letter-spacing: .25em;
+        font-size: 3em;
+        letter-spacing: .375em;
     }
 
     #homehero {
+        height: 400px;
         background-size: 100% 100%;
     }
 }
