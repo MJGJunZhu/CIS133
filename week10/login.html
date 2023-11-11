@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authorize</title>
+    <style>
+        #loginTable {
+            margin-top: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #submit{
+            width: 100%;
+        }
+        #reset {
+            width: 100%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <form action="" id="loginForm" method="post" name="login">
+        <table id="loginTable">
+            <tr>
+                <td colspan="2">
+                    <input type="text" name="username" id="uname" autofocus maxlength="250" required tabindex="1" placeholder="Type your username">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="text" name="password" id="psword" maxlength="250" required tabindex="2" placeholder="Type your password" >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="reset" id="reset" tabindex="4">Reset</button>
+                </td>
+                <td>
+                    <button type="submit" id="submit" tabindex="3">Submit</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
