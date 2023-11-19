@@ -1,0 +1,14 @@
+body {
+    background-color: azure;
+}
+table {
+    justify-content: center;
+    border: 2px;
+}
+
+table td th {
+    padding: 10px;
+}
+#service {
+    text-align: center;
+}
