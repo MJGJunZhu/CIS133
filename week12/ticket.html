@@ -63,20 +63,21 @@
             <p><span class="boldText" id="amigoName">???</span></p>
         </amigoInfo>
     </ticket>
-</body>
-<script>
-    function Name() {
-        let StrName = window.prompt("Your Name?");
-        document.getElementById("ownerName").innerText = StrName;
-        document.title = `${StrName}'s Ticket to Animal Amigos`;
-    }
-    function Visit() {
-        let StrNumber = window.prompt("What date would you like master?");
-        document.getElementById("visitDate").innerText = StrNumber;
-    }
-    function cancelTicket(){
+    <script>
+        function Name() {
+            let StrName = window.prompt("Your Name?");
+            document.getElementById("ownerName").innerText = StrName;
+            document.title = `${StrName}'s Ticket to Animal Amigos`;
+        }
+        function Visit() {
+            let StrNumber = window.prompt("What date would you like master?");
+            document.getElementById("visitDate").innerText = StrNumber;
+        }
+        function cancelTicket(){
             window.close();
         }
-</script>
+    </script>
+</body>
+
 
 </html>
