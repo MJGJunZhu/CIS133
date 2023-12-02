@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -40,7 +41,7 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="2" style="text-align:right;"">
+                <td colspan="2" style="text-align:right;">
                     <input type="button" value="Cancel" onclick="cancelTicket()" />
                     <input type="button" value="Print Ticket" onclick="printTicket()" />
                 </td>
@@ -66,16 +67,42 @@
 
 <script lang="javascript">
 
-    var name = window.prompt('Enter your first name');
-    var date = window.prompt('Enter the date you want to visit');
-    document.title = `${name}'s Ticket to Animal Amigos`;
+    var name = window.prompt('Enter your first name, Master');
+    var date = window.prompt('Enter the date you wish to visit, Master');
+    document.title = `Master ${name}'s Ticket to Animal Amigos`;
     document.getElementById('ownerName').innerText = name;
     document.getElementById('visitDate').innerText = date;
 
     function cancelTicket() {
         window.close();
     }
+    function printTicket() {
 
+        var amigoName = document.getElementById('amigo_name').value;
+
+        var amigoType = document.getElementById('amigo_type').value;
+
+        var amigoSizeOptions = document.getElementsByName('amigo_size');
+
+        var amigoSize;
+        for (var i = 0; i < amigoSizeOptions.length; i++) {
+            if (amigoSizeOptions[i].checked) {
+            amigoSize = amigoSizeOptions[i].value;
+            break;
+        }
+    }
+
+        document.getElementById('amigoName').innerText = amigoName;
+
+        var imgSrc = `./images/${amigoType}-${amigoSize}.jpg`;
+        document.getElementById('amigoPicture').src = imgSrc;
+
+        document.getElementById('amigoPicture').style.height = '150px';
+
+        document.getElementById('form').style.display = 'none';
+
+        alert('Master, your ticket is ready to be printed.');
+    }
 </script>
 
 </html>
